@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #ced1d3;
+    padding: 50px;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    margin-left: 16px;
+    font-weight: bold;
+    color: #6d0101;
+    text-decoration: none;
+}
+.headline {
+    color: #4b4949;
+    text-decoration: overline#6d0101;
+}
+.text-highlight {
+    color: #4b4949;
+}
+.pircing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    flex: 0 1 300px;
+    background: #ced1d3;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    position: relative;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card h3 {
+    color: #555;
+}
+.card h2 {
+    color: #6d0101;
+    font-size: 32px;
+    margin: 10px 0;
+}
+.small {
+    color: grey;
+    font-size: 14px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+ul li {
+    margin: 10px 0;
+}
+button {
+    background: #6d0101;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+button:hover {
+    background: black;
+}
+.card a {
+    display: block;
+    text-decoration: none;
+    color: #6d0101;
+    font-size: 14px;
+}
+.popular {
+    transform: scale(1.05);
+    border: 2px solid #6d0101;
+}
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6d0101;
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+@media (max-width: 960px) {
+    .card {
+        flex: 0 1 45%;
+    }
+}
+@media (max-width: 650px) {
+    .card {
+        flex: 0 1 100%;
+    }
+}
+a:hover{
+  text-decoration: underline;
+  color: black;
+}
+.wave{
+  object-position: bottom;
+  position:absolute;
+  left:0;
+  right: 0;
+  bottom: 0px;
+}
+.wavetop{
+    object-position: top;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+.text-container1{
+    background-color: #c9c6c6;
+    color: #4b4949;
+    font-weight: 600px;
+    padding: 8px;
+    display: block;
+    width:1600px;
+    text-align: center;
+    
+}
+.illustration{
+    display: block;
+    width: 50%;
+    object-position: center;
+}
+.illu-container{
+    background-color: #c9c6c6;
+ }
+ .help-text{
+    text-align: right;
+    object-position: right;
+ }
+</style>
+<body>
+<div class="navbar">
+    <div class="headline"><h1>UNSERE PAKETE</h1></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Über uns</a>
+    </div>
+</div>
+<h2 class="text-highlight"></h2>
+<div class="pircing">
+    <div class="card">
+        <div class="badge">Beliebt</div>
+        <h3>Basis</h3>
+        <h2>€10</h2>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+        <button>Kaufen</button>
+        <a href="#">Mehr Infos</a>
+    </div>
+    <div class="card popular">
+        <div class="badge">Top</div>
+        <h3>Standard</h3>
+        <h2>€20</h2>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+        <button>Kaufen</button>
+        <a href="#">Mehr Infos</a>
+    </div>
+    <div class="card">
+        <h3>Premium</h3>
+        <h2>€30</h2>
+        <ul>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+        </ul>
+        <button>Kaufen</button>
+        <a href="#">Mehr Infos</a>
+        </div>
+          <img class="wave" src="img/waves.svg">
+          <img class="wavetop" src="img/wavetop.svg">
+        <div class="text-container1">
+               Bei Fragen kontaktieren sie uns gerne!
+            </div>
+            <div class="illu-container">
+                <h1 class="help-text">Sie brauchen Hilfe bei dererstellung ihres Bewerbungsschreibens?</h1>
+                
+            <img class="illustration" src="img/illustration.png">
+            </div>
+    
+</body>
+</html>
